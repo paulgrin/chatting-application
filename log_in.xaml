@@ -1,0 +1,29 @@
+﻿<Window x:Class="App_chatting.log_in"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App_chatting"
+        mc:Ignorable="d"
+        Title="Welcome to Chaterino" Icon="./Resources/rsLOL.ico" Height="550" Width="350" Loaded="login_loaded" Background="#EAE7DE">
+    
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Right" Margin="0,116,139,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="38" Width="179" FontSize="25" FontWeight="Bold" FontFamily="Bahnschrift Light"><Run Foreground="#7A92FF" Text="Username:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="39" Width="184" FontSize="25" FontWeight="Bold" FontFamily="Bahnschrift Light"><Run Foreground="#7A92FF" Text="Password:"/><Run Text=" "/></TextBlock>
+        <TextBox x:Name="usertxt" HorizontalAlignment="Left" Background="LightGray" Height="39" Margin="26,159,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="265" FontSize="24"/>
+        <PasswordBox x:Name="passtxt" HorizontalAlignment="Left" Background="LightGray" Margin="24,277,0,0" VerticalAlignment="Top" Height="38" Width="265" FontSize="24"/>
+        <Button x:Name="lego_btn" Content="LOGIN" HorizontalAlignment="Left" Margin="59,362,0,0" VerticalAlignment="Top" Width="219" Height="42" FontSize="24" Click="lego_btn_Click" Background="#5973EB" BorderBrush="#FF3F1010"  FontWeight="Bold">
+        </Button>
+        
+        <Button x:Name="nt_user" Content="REGISTER" HorizontalAlignment="Left" Margin="213,431,0,0" VerticalAlignment="Top" Width="50" Height="19" FontSize="9" Click="nt_user_Click" Background="Yellow" FontWeight="Bold" />
+        <TextBlock HorizontalAlignment="Left" Margin="102,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="152" FontSize="38" Foreground="#2C419E" FontWeight="Bold" TextDecorations="{x:Null}" FontFamily="Century Gothic"><Run Text="S"/><Run Text="IGN IN"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="43,431,0,0" TextWrapping="Wrap" Text="Not registered? Click here -&gt;" VerticalAlignment="Top" Width="165" FontWeight="Bold" FontStyle="Italic"/>
+        <Image HorizontalAlignment="Left" Height="30" Margin="10,428,0,0" VerticalAlignment="Top" Width="40" Source="Resources/register.ico"/>
+        
+        
+    </Grid>
+</Window>
